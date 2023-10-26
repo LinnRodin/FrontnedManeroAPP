@@ -1,12 +1,14 @@
 import React from 'react'
+import Logo from "../assets/images/logo.png";
+import User from "../assets/images/user.png";
 
 const AccountCreatedConfirmView = () => {
   return (
 <section className="confirme">
   <div className="container">
-      <div className="logo"><img src="images/logo.png" alt="" /></div>
+      <div className="logo"><img src={Logo} alt="" /></div>
       <div className="image">
-          <img src="/images/user.png" alt="key" />
+          <img src={User} alt="key" />
       </div>
       <i className="fa-sharp fa-light fa-pipe"></i>
       <div className="action">Account Created!</div>

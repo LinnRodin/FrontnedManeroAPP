@@ -1,12 +1,14 @@
 import React from 'react'
+import Logo from "../assets/images/logo.png";
+import Key from "../assets/images/key.png";
 
 const PasswordResetConfirmView = () => {
   return (
 <section className="confirme">
   <div className="container">
-    <div className="logo"><img src="images/logo.png" alt=""/></div>
+    <div className="logo"><img src={Logo} alt=""/></div>
     <div className="image">
-        <img src="/images/key.png" alt="key" />
+        <img src={Key} alt="key" />
     </div>
     <i className="fa-sharp fa-light fa-pipe"></i>
     <div className="action">Your password has <br /> been reset!</div>
