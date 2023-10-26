@@ -1,0 +1,112 @@
+.verify-phone {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @include xl {
+        width: 100%;
+        padding:100px
+      }
+    
+      @include xxl {
+        width: 100%;
+        margin-top: 150px;
+      }
+    
+      @include xxxl {
+        width: 100%;
+        margin-top: 150px;
+      }
+
+    .container {
+        width: 375px;
+
+        .topp-content {
+            display: flex;
+            justify-content: space-between;
+    
+            a {
+                display: block;
+                color: $color-dark-1;
+                flex:0;
+                        
+            }
+    
+            .heading {
+                color: $color-dark-1;
+                font-size: 18px;
+                font-weight: $font-weight-semibold;
+                text-align: center;
+                flex:1;
+            }
+        }
+        .form {
+            display: inline-block;
+          
+            .title {
+              display: block;
+              text-align: left;
+              margin: 30px 0;
+              color: $color-dark-1;
+            }
+          
+            .input-group {
+              display: flex;
+              align-items: center;
+              border: 0.09375rem solid $color-background;
+              border-radius: 22.5px !important;
+              position: relative;
+              margin-bottom: 20px;
+              padding:5px;
+          
+              .input-label {  
+                position: absolute;   
+                top: -0.7rem; 
+                left: 1.3rem;
+                color:#626262;
+                background-color: #FFFFFF;
+              }
+              .phone-input {
+                display: flex;
+                align-items: center;
+                width: 100%; 
+
+                .flags {
+                    margin-left: 10px;
+                    i { color: $color-theme;}                   
+                }
+
+              input {
+                height: 2.8125rem;
+                margin-left: 5px;
+                border: none; 
+                width: 150px;
+              }
+          
+              select {
+                appearance: none;
+                height: 2.8125rem;
+                border: none; 
+              }
+
+              i {
+                color: $color-background;
+                font-size: 20px;
+                margin: 0px 10px;
+              }
+            }
+        }
+          
+            a {
+              width: 335px;
+              display: flex;
+              text-decoration: none;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+    }
+  
+}
