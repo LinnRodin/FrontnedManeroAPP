@@ -1,0 +1,128 @@
+h2{
+    margin-top: 80px;
+    font-size: 25px;
+    font-weight: $font-weight-ExtraBold;
+}
+
+.location{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .location-icon{
+       margin-left: 10px;
+    }
+
+    .adress{
+        
+        margin-right: 110px;
+        color: #B3B9C7;
+
+        .street{
+            margin-top: -10px;
+        }
+    }
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .email-icon{
+       margin-left: 10px;
+    }
+
+    .email-info{
+        color: #B3B9C7;
+        margin-right: 100px;
+
+        .service-email{
+            margin-top: -10px;
+        }
+    }
+}
+.phone-number{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .phone-icon{
+       margin-left: 10px;
+    }
+
+    .phone-info{
+        color: #B3B9C7;
+        margin-right: 180px;
+
+        .service-phone{
+            margin-top: -10px;
+        }
+    }
+}
+
+.order-form {
+    margin-top: 200px;
+
+    p{
+        font-size: 14px;
+        font-weight: $font-weight-regular;
+        color: #B3B9C7;
+    }
+
+    .form-container {
+
+        .form-field-container {
+            position: relative;
+            top: 20px;
+
+            .form-field {
+                padding: 15px;
+                width: 100%;
+                border-radius: 25px;
+                background-color: rgba($color-dark-2, 0.0);
+                border: 1px solid $color-dark-2 ;
+                position: relative; 
+                color: $color-white;
+            }
+    
+            .arrow-container {
+                position: absolute;
+                width: 43px;
+                height: 43px;
+                background-color: #B3B9C7;
+                border-radius: 50px;
+                text-align: center;
+                top: 50%;
+                right: 4px;
+                transform: translateY(-50%);
+                
+                .arrow-icon {
+                    position: absolute;
+                    color: $color-dark-1; 
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 25px;
+                }
+            }
+    
+            .order-number {
+                position: absolute;
+                top: -15px;  
+                left: 20%;
+                transform: translateX(-50%);
+                background-color:  rgba(0, 0, 0, 0.8);
+                padding: 5px 10px;
+                border-radius: 10px;
+                color: $color-dark-1;
+                font-size: 16px;
+                color: $color-white;
+                font-weight: $font-weight-semibold;
+                z-index: 9999;
+                font-size: 12px;
+                font-weight: $font-weight-semibold;
+                color: #B3B9C7;
+            }
+        }
+    }
+}
