@@ -5,7 +5,7 @@ const SignInView = () => {
 <section className="sign-in">
   <div className="container">
   <div className="topp-content">
-      <a href=""><i className="fa-solid fa-less-than"></i></a>
+      <Navlink to=""><i className="fa-solid fa-less-than"></i></Navlink>
       <div className="heading">Sign in</div>
     </div>
     <div className="title">
@@ -28,12 +28,12 @@ const SignInView = () => {
                 <label>Remember me</label>
             </div>
             <div className="forgot-me">
-                <a href="forgotpassword.html"> Forgot Password?</a>
+                <Navlink to="/" class="navlink"> Forgot Password?</Navlink>
             </div>    
         </div>
         <Navlink to="/" className="primary-btn">SIGN IN</Navlink>
       </form>
-      <div className="signin-link"> Don’t have an account? <a href="signin.html">Sign up.</a>
+      <div className="signin-link"> Don’t have an account? <Navlink to="/">Sign up.</Navlink>
     </div>
     <div className="social-icons">
       <a href="https://www.facebook.com" target="_blank" className="icon facebook"><i className="fab fa-facebook-f"></i></a>

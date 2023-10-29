@@ -5,7 +5,7 @@ const VerifyPhoneView = () => {
 <section className="verify-phone">
   <div className="container">
     <div className="topp-content">
-        <a href=""><i className="fa-solid fa-less-than"></i></a>
+        <Navlink to=""><i className="fa-solid fa-less-than"></i></Navlink>
         <div className="heading">Verify your phone number</div>
     </div>
     <form className="form">

@@ -5,7 +5,7 @@ const ForgotPasswordView = () => {
 <section className="forgot-password">
   <div className="container">
   <div className="topp-content">
-      <a href=""><i className="fa-solid fa-less-than"></i></a>
+      <Navlink to=""><i className="fa-solid fa-less-than"></i></Navlink>
       <div className="heading">Forgot password</div>
   </div>
   <div className="title">Please enter your email address. You will <br /> receive a link to create a new password via <br /> email.</div>
