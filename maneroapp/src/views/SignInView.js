@@ -31,7 +31,7 @@ const SignInView = () => {
                 <a href="forgotpassword.html"> Forgot Password?</a>
             </div>    
         </div>
-        <a href="" className="primary-btn">SIGN IN</a>
+        <Navlink to="/" className="primary-btn">SIGN IN</Navlink>
       </form>
       <div className="signin-link"> Don’t have an account? <a href="signin.html">Sign up.</a>
     </div>

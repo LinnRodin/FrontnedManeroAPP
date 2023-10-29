@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from "../assets/images/logo.png";
 import User from "../assets/images/user.png";
 
+
 const AccountCreatedConfirmView = () => {
   return (
 <section className="confirme">
@@ -13,7 +14,7 @@ const AccountCreatedConfirmView = () => {
       <i className="fa-sharp fa-light fa-pipe"></i>
       <div className="action">Account Created!</div>
       <div className="description">Your account had beed created <br />successfully.</div>
-      <a href="" className="primary-btn">SHOP NOW</a>
+      <Navlink to="/" className="primary-btn">SHOP NOW</Navlink>
     </div>
 </section>
   )

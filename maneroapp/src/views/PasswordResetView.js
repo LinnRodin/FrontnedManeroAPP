@@ -18,7 +18,7 @@ const PasswordResetView = () => {
             <label className="input-label" for="password">CONFIRM PASSWORD</label>
              <input type="password" />
         </div>
-        <a href="" className="primary-btn">CHANGE PASSWORD</a>
+        <Navlink to="/" className="primary-btn">CHANGE PASSWORD</Navlink>
       </form>      
   </div>
 </section>

@@ -24,7 +24,7 @@ const VerifyPhoneView = () => {
             <input type="text" id="phone-number" name="phone-number" placeholder="123456789" />
           </div>
         </div>
-        <a href="verifyphonecode.html" className="primary-btn">CONFIRM</a>
+        <Navlink to="/" className="primary-btn">CONFIRM</Navlink>
       </form>
   </div>
 </section>

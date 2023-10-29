@@ -14,7 +14,7 @@ const ForgotPasswordView = () => {
         <label className="input-label" for="email">EMAIL</label>
           <input type="email" />
       </div>
-      <a href="/sucessforgotpassword.html" className="primary-btn">SEND</a>
+      <Navlink to="/" className="primary-btn">SEND</Navlink>
     </form>      
 </div>
 </section>

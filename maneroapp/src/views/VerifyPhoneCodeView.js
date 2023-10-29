@@ -27,8 +27,8 @@ const VerifyPhoneCodeView = () => {
                   <input type="number" />
               </div>
           </div>
-          <a href="" className="info">Didn’t receive the OTP? Resend.</a>
-          <a href="" className="primary-btn">VERIFY</a>
+          <Navlink to="/" className="info">Didn’t receive the OTP? Resend.</Navlink>
+          <Navlink to="/" className="primary-btn">VERIFY</Navlink>
       </form>
   </div>
 </section>

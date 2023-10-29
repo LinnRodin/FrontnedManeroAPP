@@ -13,7 +13,7 @@ const PasswordResetConfirmView = () => {
     <i className="fa-sharp fa-light fa-pipe"></i>
     <div className="action">Your password has <br /> been reset!</div>
     <div className="description">Qui ex aute ipsum duis. Incididunt <br /> adipisicing voluptate laborum</div>
-    <a href="resetpassword.html" className="primary-btn">DONE</a>
+    <Navlink to="/" className="primary-btn">DONE</Navlink>
     </div>
 </section>
   )
