@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    border-bottom: 1px solid #f1efef;
+    background-color: #fcfcfc;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .logo {
+
+            .circle-outer {
+                width: 80px;
+                height: 80x;
+                background-color: #fff;
+                border: 4px solid rgba(199, 172, 172, 0.1);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .circle-inner {
+                width: 70px;
+                height: 70px;
+                background-color: #fef0f0; /* Färg på den inre cirkeln */
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            h1 {
+                font-size: 26px;
+                font-weight: bold;
+                z-index: 1;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+        }
+
+        .menu-links {
+            .links {
+                a{
+                    color: #222529;
+                    font-size: 16px;
+                    font-weight: $font-weight-bold;
+                    text-decoration: none;
+                    margin: 0 1.2rem;
+
+                    &:hover {
+                        color: #FE7878;
+                    }
+                }
+            }
+        }
+
+        .header-icon {
+            display: flex;
+            align-items: center;
+            align-self: center;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    color:rgb(92, 92, 92);
+                }
+            }
+
+            .bag-icon {
+            position: relative;
+            display: inline-block;
+
+            .fa-bag-shopping {
+                font-size: 25px;
+                margin-left: 25px;
+            }
+            
+            .dollar-circle {
+                position: absolute;
+                background-color: $color-theme;
+                color: $color-white;
+                font-weight: $font-weight-bold;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: -6px;
+                left: -13px;
+                margin-left: 22px;
+                font-size: 14px;
+            }
+
+        }
+
+        .icons {
+            font-size: 22px;
+            margin-left: 20px;
+        }
+
+        }
+    }
+
+    @include md {
+        display: flex;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

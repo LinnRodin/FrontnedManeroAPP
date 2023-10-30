@@ -1,18 +1,29 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.min.css';
-import CategoriesView from './View/CategoriesView';
-import DownBarCategories from './View/DownBarCategories';
-import GridCategories from './View/GridCategories';
+import CategoriesView from './Views/CategoriesView';
+import GridCategoriesView from './Views/GridCategories';
+import DownBarCategories from './Views/DownBarCategories';
+import BestSellersView from './Views/BestSellersView';
 
-
-function App() {
+function CategoriesPage() {
   return (
     <>
-      <CategoriesView/>
-      <GridCategories/>
-      <DownBarCategories/>
+       <CategoriesView/>
+       <GridCategoriesView/>
+       <DownBarCategories/> 
     </>
   );
 }
 
-export default App;
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<BestSellersView />} />
+        <Route path='/categories' element={<CategoriesPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
+export default App;

@@ -1,8 +1,10 @@
-
-
+@import './utilities';
 @import './core/colors';
 @import './core/fonts';
 @import './core/mixins';
+@import './utilities';
 
+@import './HeaderSection';
+@import './BestSellersSection';
 @import './Categories';
 @import './ContactUs';
