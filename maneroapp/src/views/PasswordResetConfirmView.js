@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from "../assets/images/logo.png";
 import Key from "../assets/images/key.png";
+import { NavLink } from 'react-router-dom'
 
 const PasswordResetConfirmView = () => {
   return (
@@ -13,7 +14,7 @@ const PasswordResetConfirmView = () => {
     <i className="fa-sharp fa-light fa-pipe"></i>
     <div className="action">Your password has <br /> been reset!</div>
     <div className="description">Qui ex aute ipsum duis. Incididunt <br /> adipisicing voluptate laborum</div>
-    <Navlink to="/" className="primary-btn">DONE</Navlink>
+    <NavLink to="/" className="primary-btn">DONE</NavLink>
     </div>
 </section>
   )

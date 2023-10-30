@@ -1,11 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const VerifyPhoneView = () => {
   return (
 <section className="verify-phone">
   <div className="container">
     <div className="topp-content">
-        <Navlink to=""><i className="fa-solid fa-less-than"></i></Navlink>
+        <NavLink to=""><i className="fa-solid fa-less-than"></i></NavLink>
         <div className="heading">Verify your phone number</div>
     </div>
     <form className="form">
@@ -24,7 +25,7 @@ const VerifyPhoneView = () => {
             <input type="text" id="phone-number" name="phone-number" placeholder="123456789" />
           </div>
         </div>
-        <Navlink to="/" className="primary-btn">CONFIRM</Navlink>
+        <NavLink to="/" className="primary-btn">CONFIRM</NavLink>
       </form>
   </div>
 </section>

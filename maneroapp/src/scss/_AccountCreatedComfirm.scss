@@ -1,25 +1,13 @@
+
+
 .confirme {
     background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     
-      @include xl {
-        width: 100%;
-        padding:100px
-      }
-    
-      @include xxl {
-        width: 100%;
-        padding:100px
-      }
-    
-      @include xxxl {
-        width: 100%;
-        padding:100px
-      }
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 375px;
 
     
@@ -51,10 +39,6 @@
         }
         .primary-btn {
             width: 335px;
-            display: flex;
-            text-decoration: none;
-            align-items: center;
-            justify-content: center;
         }
 
     }

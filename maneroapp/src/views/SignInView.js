@@ -1,11 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const SignInView = () => {
   return (
 <section className="sign-in">
   <div className="container">
   <div className="topp-content">
-      <Navlink to=""><i className="fa-solid fa-less-than"></i></Navlink>
+      <NavLink to=""><i className="fa-solid fa-less-than"></i></NavLink>
       <div className="heading">Sign in</div>
     </div>
     <div className="title">
@@ -28,12 +29,12 @@ const SignInView = () => {
                 <label>Remember me</label>
             </div>
             <div className="forgot-me">
-                <Navlink to="/" class="navlink"> Forgot Password?</Navlink>
+                <NavLink to="/" class="navlink"> Forgot Password?</NavLink>
             </div>    
         </div>
-        <Navlink to="/" className="primary-btn">SIGN IN</Navlink>
+        <NavLink to="/" className="primary-btn">SIGN IN</NavLink>
       </form>
-      <div className="signin-link"> Don’t have an account? <Navlink to="/">Sign up.</Navlink>
+      <div className="signin-link"> Don’t have an account? <NavLink to="/">Sign up.</NavLink>
     </div>
     <div className="social-icons">
       <a href="https://www.facebook.com" target="_blank" className="icon facebook"><i className="fab fa-facebook-f"></i></a>

@@ -1,11 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const PasswordResetView = () => {
   return (
 <section className="reset-password">
   <div className="container">
   <div className="topp-content">
-      <Navlink to=""><i className="fa-solid fa-less-than"></i></Navlink>
+      <NavLink to=""><i className="fa-solid fa-less-than"></i></NavLink>
       <div className="heading">Reset password</div>
     </div>
     <div className="title">Enter new password and confirm.</div>
@@ -18,7 +19,7 @@ const PasswordResetView = () => {
             <label className="input-label" for="password">CONFIRM PASSWORD</label>
              <input type="password" />
         </div>
-        <Navlink to="/" className="primary-btn">CHANGE PASSWORD</Navlink>
+        <NavLink to="/" className="primary-btn">CHANGE PASSWORD</NavLink>
       </form>      
   </div>
 </section>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from "../assets/images/logo.png";
 import User from "../assets/images/user.png";
+import { NavLink } from 'react-router-dom'
 
 
 const AccountCreatedConfirmView = () => {
@@ -14,7 +15,7 @@ const AccountCreatedConfirmView = () => {
       <i className="fa-sharp fa-light fa-pipe"></i>
       <div className="action">Account Created!</div>
       <div className="description">Your account had beed created <br />successfully.</div>
-      <Navlink to="/" className="primary-btn">SHOP NOW</Navlink>
+      <NavLink to="/" className="primary-btn">SHOP NOW</NavLink>
     </div>
 </section>
   )

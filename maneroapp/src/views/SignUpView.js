@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const SignUpView = () => {
   return (
@@ -30,10 +31,10 @@ const SignUpView = () => {
             <label className="input-label" htmlFor="confirmPassword">Confirm Password</label>
             <input type="password" id="confirmPassword" />
           </div>
-          <a href="signin.html" className="submit-button">SIGN UP</a>
+          <NavLink to="/accountcreatedcomfirm" className="submit-button">SIGN UP</NavLink>
         </form>
         <div className="signin-link">
-          Already have an account? <a href="signin.html">Sign In</a>
+          Already have an account? <NavLink to="signin">Sign In</NavLink>
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="icon facebook">

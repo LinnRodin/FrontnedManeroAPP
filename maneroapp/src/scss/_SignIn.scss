@@ -1,27 +1,14 @@
 .sign-in {
     background-color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-
-    @include xl {
-        width: 100%;
-        padding:100px
-      }
-    
-      @include xxl {
-        width: 100%;
-        margin-top: 150px;
-      }
-    
-      @include xxxl {
-        width: 100%;
-        margin-top: 150px;
-      }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
     .container {
-        width: 375px;
+        width: 370px;
+        text-align: center;
+    
 
         .topp-content {
             display: flex;
@@ -80,6 +67,7 @@
                 }
     
                 input {
+                  align-items: center;
                   width: 335px;
                   height: 2.8125rem;  // 45px
                   margin: 0.625rem;  // 10px
@@ -87,7 +75,7 @@
                   border-radius: 22.5px !important;  
                 }
             }
-            a {
+            .primary-btn {
                 width: 335px;
                 display: flex;
                 text-decoration: none;
@@ -109,7 +97,7 @@
                   }
               
                   label {
-                    width: 140px;
+                    width: 120px;
                     color: #626262;
                   }
                 }
