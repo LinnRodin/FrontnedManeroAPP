@@ -6,7 +6,6 @@ const PasswordResetView = () => {
 <section className="reset-password">
   <div className="container">
   <div className="topp-content">
-      <NavLink to=""><i className="fa-solid fa-less-than"></i></NavLink>
       <div className="heading">Reset password</div>
     </div>
     <div className="title">Enter new password and confirm.</div>
@@ -19,7 +18,7 @@ const PasswordResetView = () => {
             <label className="input-label" for="password">CONFIRM PASSWORD</label>
              <input type="password" />
         </div>
-        <NavLink to="/" className="primary-btn">CHANGE PASSWORD</NavLink>
+        <NavLink to="/passwordcomfirm" className="primary-btn">CHANGE PASSWORD</NavLink>
       </form>      
   </div>
 </section>

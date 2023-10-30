@@ -6,7 +6,6 @@ const VerifyPhoneCodeView = () => {
 <section className="verify-code">
   <div className="container">
     <div className="topp-content">
-      <NavLink to=""><i className="fa-solid fa-less-than"></i></NavLink>
       <div className="heading">Verify your phone number</div>
       </div>
       <div className="title">Enter your OTP code here.</div>

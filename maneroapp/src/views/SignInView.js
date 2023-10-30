@@ -6,7 +6,6 @@ const SignInView = () => {
 <section className="sign-in">
   <div className="container">
   <div className="topp-content">
-      <NavLink to=""><i className="fa-solid fa-less-than"></i></NavLink>
       <div className="heading">Sign in</div>
     </div>
     <div className="title">
@@ -29,7 +28,7 @@ const SignInView = () => {
                 <label>Remember me</label>
             </div>
             <div className="forgot-me">
-                <NavLink to="/" class="navlink"> Forgot Password?</NavLink>
+                <NavLink to="/forgotpassword" class="navlink"> Forgot Password?</NavLink>
             </div>    
         </div>
         <NavLink to="/" className="primary-btn">SIGN IN</NavLink>
