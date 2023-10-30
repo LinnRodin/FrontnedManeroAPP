@@ -4,16 +4,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include xl {
+      width: 100%;
+      padding:100px
+    }
+  
+    @include xxl {
+      width: 100%;
+      padding:100px
+    }
+  
+    @include xxxl {
+      width: 100%;
+      padding:100px
+    }
  
     .container {
         width: 370px;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     
 
         .topp-content {
-            display: flex;
-            justify-content: space-between;
-            
             .heading {
                 color: $color-dark-1;
                 font-size: 18px;
@@ -96,9 +111,11 @@
                 }
               
                 .forgot-me {
-                  .navlink {
+                  .link {
                     color: $color-dark-1;
                     width: 140px;
+                    text-decoration: none;
+                    font-weight: $font-weight-semibold;
                     &:hover {
                         color: $color-theme;
                       }  
@@ -111,9 +128,10 @@
             color: #626262;
             margin:20px 0px;
       
-            a {    
+            .link {    
               color: $color-dark-1;
               text-decoration: none;
+              font-weight: $font-weight-ExtraBold;
               &:hover {
                 color: $color-theme;
               }      
@@ -139,7 +157,6 @@
                 &.facebook i { color: #3B5999; }
                 &.twitter i { color: #55ACEE }
                 &.google i { color: #DD4B39; }
-        
                 }
           }
     }

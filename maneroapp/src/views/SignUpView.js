@@ -12,29 +12,29 @@ const SignUpView = () => {
         </div>
         <form className="form">
           <div className="input-group">
-            <label className="input-label" htmlFor="firstname">Firstname</label>
+            <label className="input-label" htmlFor="firstname">FIRSTNAME</label>
             <input type="text" id="firstname" />
           </div>
           <div className="input-group">
-            <label className="input-label" htmlFor="lastname">Lastname</label>
+            <label className="input-label" htmlFor="lastname">LASTNAME</label>
             <input type="text" id="lastname" />
           </div>
           <div className="input-group">
-            <label className="input-label" htmlFor="email">Email</label>
+            <label className="input-label" htmlFor="email">EMAIL</label>
             <input type="email" id="email" />
           </div>
           <div className="input-group">
-            <label className="input-label" htmlFor="password">Password</label>
+            <label className="input-label" htmlFor="password">PASSWORD</label>
             <input type="password" id="password" />
           </div>
           <div className="input-group">
-            <label className="input-label" htmlFor="confirmPassword">Confirm Password</label>
+            <label className="input-label" htmlFor="confirmPassword">COMFIRM PASSWORD</label>
             <input type="password" id="confirmPassword" />
           </div>
-          <NavLink to="/accountcreatedcomfirm" className="submit-button">SIGN UP</NavLink>
+          <NavLink to="/accountcreatedcomfirm" className="primary-btn">SIGN UP</NavLink>
         </form>
         <div className="signin-link">
-          Already have an account? <NavLink to="signin">Sign In</NavLink>
+          Already have an account? <NavLink to="signin" class="link">Sign In</NavLink>
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="icon facebook">

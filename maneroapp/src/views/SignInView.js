@@ -28,12 +28,12 @@ const SignInView = () => {
                 <label>Remember me</label>
             </div>
             <div className="forgot-me">
-                <NavLink to="/forgotpassword" class="navlink"> Forgot Password?</NavLink>
+                <NavLink to="/forgotpassword" class="link"> Forgot Password?</NavLink>
             </div>    
         </div>
         <NavLink to="/" className="primary-btn">SIGN IN</NavLink>
       </form>
-      <div className="signin-link"> Don’t have an account? <NavLink to="/">Sign up.</NavLink>
+      <div className="signin-link"> Don’t have an account? <NavLink to="/" class="link">Sign up.</NavLink>
     </div>
     <div className="social-icons">
       <a href="https://www.facebook.com" target="_blank" className="icon facebook"><i className="fab fa-facebook-f"></i></a>
