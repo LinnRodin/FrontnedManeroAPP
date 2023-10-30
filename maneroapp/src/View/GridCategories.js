@@ -1,7 +1,6 @@
 import React from 'react'
 
-const _GridCategoriesView = () => {
-
+const GridCategories = () => {
   return (
     <section className="categories">
         <div className="container">
@@ -37,4 +36,4 @@ const _GridCategoriesView = () => {
   )
 }
 
-export default _GridCategoriesView
+export default GridCategories

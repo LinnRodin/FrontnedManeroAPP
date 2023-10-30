@@ -1,15 +1,15 @@
 import './App.min.css';
-import './View/CategoriesView';
-import './View/GridCategoriesView';
-import'./View/DownBarCategories';
+import CategoriesView from './View/CategoriesView';
+import DownBarCategories from './View/DownBarCategories';
+import GridCategories from './View/GridCategories';
 
 
 function App() {
   return (
     <>
-       <CategoriesView/>
-       <GridCategoriesView/>
-       <DownBarCategories/> 
+      <CategoriesView/>
+      <GridCategories/>
+      <DownBarCategories/>
     </>
   );
 }

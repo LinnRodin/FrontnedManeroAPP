@@ -84,13 +84,34 @@
             .bar-icon{
                 margin-left: 755px;
                 display: block;
-
+                
                 a{
                     color: $color-dark-1;
-                    
+                    padding: 0px 5px 0px 0px;
                 }
             }
         }
+        @include xl{
+
+            .search-form {
+                margin-left: 65px;
+            } 
+            .bar-staggered {
+                display: none;
+
+            }
+            .bar-icon{
+                margin-left: 940px;
+                display: block;
+            
+                a{
+                    color: $color-dark-1;
+                    padding: 0px 5px 0px 0px;
+                }
+            }
+        }
+        
+
        
     }
 

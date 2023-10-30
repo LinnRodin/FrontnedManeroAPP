@@ -1,0 +1,29 @@
+html, body {
+    font-size: 16px;
+    font-family: $font-mulish;
+    font-weight: $font-weight-regular;
+}
+
+.primary-btn {
+    font-family: $font-mulish;
+    font-weight: $font-weight-semibold;
+    padding: 15px 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: $color-dark-1;
+    color: $color-white;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+        border: 1px solid $color-theme;
+        background-color: $color-theme;
+        color: $color-white;
+    }
+}
+
+
+
+
+
+
+

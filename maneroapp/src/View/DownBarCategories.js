@@ -1,6 +1,6 @@
 import React from 'react'
 
-const _DownBarCategories = () => {
+const DownBarCategories = () => {
   return (
     <section className="down-bar">
         <div className="container">
@@ -16,4 +16,4 @@ const _DownBarCategories = () => {
   )
 }
 
-export default _DownBarCategories
+export default DownBarCategories
