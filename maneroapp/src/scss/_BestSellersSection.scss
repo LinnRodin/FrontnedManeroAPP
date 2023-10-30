@@ -69,7 +69,8 @@
 }
 
 .sortFilter {
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     text-align: center;
 
     .container {
@@ -122,6 +123,20 @@
               .hidden {
                 display: none;
               }
+        }
+
+        .section-title {
+            display: none;
+            h1 {
+                font-size: 28px;
+                font-weight: $font-weight-semibold;
+                margin-top: 50px;
+            }
+
+            @include md {
+                display: flex;
+            }
+
         }
 
         .sorting {
@@ -216,6 +231,7 @@
             .fa-star {
                 color: #FFBE00;
                 font-size: 14px;
+                margin-right: 3px;
             }
             span {
                 color: $color-dark-2;

@@ -49,6 +49,10 @@ const BestSellersView = () => {
                         </ul>
                     </div>
 
+                    <div className='section-title'>
+                        <h1>Best sellers</h1>
+                    </div>
+
                     <div className="sorting" onBlur={() => setSortingMenuOpen(false)}>
                         <p>Sorting by</p>
                         <a
