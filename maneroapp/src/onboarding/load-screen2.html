@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manero</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran&family=DM+Sans:opsz,wght@9..40,700;9..40,800;9..40,900;9..40,1000&family=Inter:wght@300;400;500;600;700;800&family=Mulish:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=DM+Sans:opsz,wght@9..40,700;9..40,800;9..40,900;9..40,1000&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700;900&family=REM:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div class="startup-screen">
+        <div class="circle outer-circle">
+            <div class="circle inner-circle">
+               <div class="load-icon"><img src="images/icons/load-rect-icon.svg" alt="Icon"  id="flashingIcon"></div> 
+                <img src="images/logos/manero-logo-main-svg.svg" alt="Manero Logo" class="logo">
+            </div>
+        </div>
+    </div>
+    
+<div class="screen-two hidden">
+    <div class="outer-big-circle">
+        <div class="inner-big-circle">
+            <div class="header-grid">
+                <div></div>
+                <span class="heading-primary">Welcome To</span>
+                <span class="heading-secondary">Manero!</span>
+                <div class="sub-header">Labore sunt culpa excepteur culpa ipsum. Labore occaecat ex nisi mollit.</div>
+                <div><button class="action-button" id="get-started-button">GET STARTED</button></div>
+                <div class="carousel-icons">
+                    <img src="images/icons/load-rect-icon.svg" alt="Icon" class="carousel-load-icon" id="flashingIcon">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                
+               
+                <div class="black-line-flex">
+                    <div class="black-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<script>
+ const screens = [
+    { type: "startup", icon: "images/icons/load-rect-icon.svg", logo: "images/logos/manero-logo-main-svg.svg" },
+    { headingPrimary: "Welcome To", headingSecondary: "Manero!", icon: "images/icons/load-rect-icon.svg" },
+    { headingPrimary: "Door To Door", headingSecondary: "Delivery!", icon: "images/icons/load-rect-icon.svg" },
+    { headingPrimary: "Easy Track", headingSecondary: "Order!", icon: "images/icons/load-rect-icon.svg" },
+    // ... other screens
+];
+
+let currentScreenIndex = 0;
+
+function updateScreen() {
+    // Hide all screens by default
+    document.querySelector(".startup-screen").style.display = "none";
+    document.querySelector(".screen-two").classList.add('hidden');
+
+
+    const screen = screens[currentScreenIndex];
+
+    if (screen.type === "startup") {
+        document.querySelector(".startup-screen").style.display = "block";
+        return;
+    } 
+    document.querySelector(".screen-two").classList.remove('hidden');
+    document.querySelector(".heading-primary").innerText = screen.headingPrimary || "";
+    document.querySelector(".heading-secondary").innerText = screen.headingSecondary || "";
+
+    const carouselIcon = document.querySelector(".carousel-load-icon");
+    carouselIcon.src = screen.icon;
+
+    const carouselIconsContainer = document.querySelector(".carousel-icons");
+    carouselIconsContainer.classList.remove('left', 'center', 'right');
+
+    switch (currentScreenIndex) {
+        case 1:
+            carouselIconsContainer.classList.add('left');
+            break;
+        case 2:
+            carouselIconsContainer.classList.add('center');
+            break;
+        case 3:
+            carouselIconsContainer.classList.add('right');
+            break;
+    }
+}
+
+
+// Initialize with the startup screen
+document.querySelector(".startup-screen").style.display = "flex";
+
+// Delay the start of the carousel by 3 seconds
+setTimeout(() => {
+    // Set the initial screen to the first one in the carousel
+    currentScreenIndex = 1;
+    updateScreen();
+    const carouselInterval = setInterval(moveToNextScreen, 6000);
+}, 6000);
+
+function moveToNextScreen() {
+    currentScreenIndex++;
+    if (currentScreenIndex >= screens.length) {
+        currentScreenIndex = 1; // start from the first screen in the carousel after startup
+    }
+    updateScreen();
+}
+
+
+document.querySelector(".get-started-button").addEventListener("click", function() {
+    clearInterval(carouselInterval); 
+});
+
+
+</script>
+</body>
+</html>
