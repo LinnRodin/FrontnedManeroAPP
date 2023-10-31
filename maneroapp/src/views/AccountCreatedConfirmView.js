@@ -15,7 +15,7 @@ const AccountCreatedConfirmView = () => {
       <i className="fa-sharp fa-light fa-pipe"></i>
       <div className="action">Account Created!</div>
       <div className="description">Your account had beed created <br />successfully.</div>
-      <NavLink to="/" className="primary-btn">SHOP NOW</NavLink>
+      <NavLink to="/signup" className="primary-btn">SHOP NOW</NavLink>
     </div>
 </section>
   )

@@ -7,13 +7,16 @@ import SignInView from './views/SignInView';
 import ForgotPasswordView from './views/ForgotPasswordView';
 import PasswordResetView from './views/PasswordResetView';
 import PasswordResetComfirmView from './views/PasswordResetConfirmView';
+import StartUpScreenView from './views/StartUpScreenView';
+
 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<SignUpView />} />
+        <Route path="/" element={<StartUpScreenView />} />
+        <Route path="/signup" element={<SignUpView />} />
         <Route path="/accountcreatedcomfirm" element={<AccountCreatedConfirmView />} />
         <Route path="/signin" element={<SignInView />} />
         <Route path="/forgotpassword" element={<ForgotPasswordView />} />

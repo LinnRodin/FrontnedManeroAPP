@@ -33,7 +33,7 @@ const SignInView = () => {
         </div>
         <NavLink to="/" className="primary-btn">SIGN IN</NavLink>
       </form>
-      <div className="signin-link"> Don’t have an account? <NavLink to="/" className="link">Sign up.</NavLink>
+      <div className="signin-link"> Don’t have an account? <NavLink to="/signup" className="link">Sign up.</NavLink>
     </div>
     <div className="social-icons">
       <a href="https://www.facebook.com" target="_blank" className="icon facebook"><i className="fab fa-facebook-f"></i></a>

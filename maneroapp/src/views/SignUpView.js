@@ -34,7 +34,7 @@ const SignUpView = () => {
           <NavLink to="/accountcreatedcomfirm" className="primary-btn">SIGN UP</NavLink>
         </form>
         <div className="signin-link">
-          Already have an account? <NavLink to="signin" className="link">Sign In</NavLink>
+          Already have an account? <NavLink to="/signin" className="link">Sign In</NavLink>
         </div>
         <div className="social-icons">
           <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="icon facebook">
