@@ -8,7 +8,7 @@ const AccountCreatedConfirmView = () => {
   return (
 <section className="confirme">
   <div className="container">
-      <div className="logo"><img src={Logo} alt="" /></div>
+      <div className="logotype"><img src={Logo} alt="" /></div>
       <div className="image">
           <img src={User} alt="key" />
       </div>

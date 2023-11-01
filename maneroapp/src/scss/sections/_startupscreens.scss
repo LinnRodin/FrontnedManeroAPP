@@ -1,3 +1,5 @@
+
+
 .startup-screen {
     position: fixed;
     top: 0;
@@ -7,6 +9,7 @@
     display: flex;
     justify-content: center; /* horizontally center */
     align-items: center;
+    background-color: $background-color;
 }
 
   
@@ -68,6 +71,7 @@
     display: none;
 }
   .screen-two {
+    background-color: $background-color;
 
     .outer-big-circle {
         width: $outer-big-circle-size;
@@ -237,11 +241,13 @@
     .screen-two {
     
         position: relative;
+        background-color: $background-color;
         width: 100vw;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        
 
         .outer-big-circle {
           

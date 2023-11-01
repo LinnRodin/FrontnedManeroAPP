@@ -4,19 +4,33 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    @include xl {
+        width: 100%;
+        padding:100px
+      }
     
+      @include xxl {
+        width: 100%;
+        margin-top: 150px;
+      }
+    
+      @include xxxl {
+        width: 100%;
+        margin-top: 150px;
+      }
     .container {
-        width: 375px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 375px;
 
     
-        .logo { 
+        .logotype {
+            margin-top:10px;
             align-items: center;
         }
-
         .image {
             margin-top: 40px;
             align-items: center;
@@ -41,6 +55,10 @@
         }
         .primary-btn {
             width: 335px;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
         }
 
     }
