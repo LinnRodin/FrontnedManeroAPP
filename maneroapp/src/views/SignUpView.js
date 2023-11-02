@@ -1,7 +1,40 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react';
+import { useNavigate, NavLink } from 'react-router-dom'
+import { createData } from './services/apiHelpers';
 
 const SignUpView = () => {
+
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const navigate = useNavigate();
+
+  const handleSignUp = async (event) => {
+    event.preventDefault();
+    if (password !== confirmPassword) {
+      console.error('Passwords do not match');
+      // Handle error (e.g., show error message to user)
+      return;
+    }
+    try {
+      const data = {
+        firstName,
+        lastName,
+        email,
+        password,
+      };
+      const response = await createData('/auth/signup', data);
+      console.log('Sign up successful:', response);
+      navigate('/accountcreatedcomfirm');  // See if this will be the right path with Leah
+    } catch (error) {
+      console.error('Error signing up:', error);
+     
+    }
+  };
+
+
   return (
     <section className="signupsection">
       <div className="container">
@@ -10,28 +43,28 @@ const SignUpView = () => {
           <i className="fa fa-pipe"></i>
           <h3>Sign Up</h3>
         </div>
-        <form className="form">
+        <form className="form"  onSubmit={handleSignUp}>
           <div className="input-group">
             <label className="input-label" htmlFor="firstname">FIRSTNAME</label>
-            <input type="text" id="firstname" />
+            <input type="text" id="firstname" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
           </div>
           <div className="input-group">
             <label className="input-label" htmlFor="lastname">LASTNAME</label>
-            <input type="text" id="lastname" />
+            <input type="text" id="lastname" value={lastName} onChange={(e) => setLastName(e.target.value)}/>
           </div>
           <div className="input-group">
             <label className="input-label" htmlFor="email">EMAIL</label>
-            <input type="email" id="email" />
+            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className="input-group">
             <label className="input-label" htmlFor="password">PASSWORD</label>
-            <input type="password" id="password" />
+            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
           </div>
           <div className="input-group">
             <label className="input-label" htmlFor="confirmPassword">COMFIRM PASSWORD</label>
-            <input type="password" id="confirmPassword" />
+            <input type="password" id="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
           </div>
-          <NavLink to="/accountcreatedcomfirm" className="primary-btn">SIGN UP</NavLink>
+          <NavLink to="/accountcreatedcomfirm" className="primary-btn"  onClick={handleSignUp} >SIGN UP</NavLink>
         </form>
         <div className="signin-link">
           Already have an account? <NavLink to="/signin" className="link">Sign In</NavLink>
