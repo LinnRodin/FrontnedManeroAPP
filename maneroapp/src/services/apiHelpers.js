@@ -1,4 +1,4 @@
-import axiosAPI from './services/axiosAPI';  
+import axiosAPI from '../services/axiosAPI';  
 
 export const fetchData = async (endpoint) => {
   try {

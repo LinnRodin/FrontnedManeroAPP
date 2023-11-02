@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom'
-import { createData } from './services/apiHelpers';
+import { createData } from '../services/apiHelpers';
 
 const SignUpView = () => {
 
@@ -64,7 +64,7 @@ const SignUpView = () => {
             <label className="input-label" htmlFor="confirmPassword">COMFIRM PASSWORD</label>
             <input type="password" id="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
           </div>
-          <NavLink to="/accountcreatedcomfirm" className="primary-btn"  onClick={handleSignUp} >SIGN UP</NavLink>
+          <button type="submit" className="primary-btn">SIGN UP</button>
         </form>
         <div className="signin-link">
           Already have an account? <NavLink to="/signin" className="link">Sign In</NavLink>
