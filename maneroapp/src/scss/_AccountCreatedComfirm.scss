@@ -1,0 +1,65 @@
+.confirme {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @include xl {
+        width: 100%;
+        padding:100px
+      }
+    
+      @include xxl {
+        width: 100%;
+        margin-top: 150px;
+      }
+    
+      @include xxxl {
+        width: 100%;
+        margin-top: 150px;
+      }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 375px;
+
+    
+        .logotype {
+            margin-top:10px;
+            align-items: center;
+        }
+        .image {
+            margin-top: 40px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        i {
+            align-items: center;
+            justify-content: center;
+            margin:10px;
+        }
+        .action {
+            color: $color-dark-1;
+            font-size: 22px;
+            text-align: center;
+            font-weight: $font-weight-bold;
+        }
+        .description {
+            text-align: center;
+            color: $color-dark-1;
+            margin-bottom: 40px;
+        }
+        .primary-btn {
+            width: 335px;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+}

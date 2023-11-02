@@ -1,6 +1,17 @@
-
-@import './utilities';
+@import './core/variables';
 @import './core/colors';
 @import './core/fonts';
 @import './core/mixins';
+@import './utilities';
+
+@import './sections/startupscreens';
+@import './AccountCreatedComfirm';
+@import './ForgotPassword';
+@import './PasswordReset';
+@import './PasswordResetComfirm';
+@import './SignIn';
+@import './SignUp';
+@import './VerifyPhone';
+@import './VerifyPhoneCode';
+
 

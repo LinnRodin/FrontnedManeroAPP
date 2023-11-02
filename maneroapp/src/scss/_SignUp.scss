@@ -1,0 +1,108 @@
+$light-gray: #f1f1f1;
+$dark-gray: #333;
+$black: #000;
+$white: #fff;
+
+.signupsection {
+  background: $white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 23.4375rem;  // 375px
+    text-align: center;
+    
+    h6 {
+      color: $color-dark-1;
+      margin-top: 5rem;
+    }
+
+    .title {
+      h3 {
+        color: $color-dark-1;
+        font-size: 1.5rem;  // 24px
+        font-weight: bold;
+        width: 7.5625rem;  // 121px
+        height: 2.625rem;  // 42px
+        margin: auto;
+        margin-top: 2rem;
+      }
+      i {
+        font-size: 1.4375rem;  // 23px
+        color: $black;
+        margin-top: 2rem;
+      }
+    }
+
+    .form {
+        display: inline-block;  
+        
+        .input-group {
+            position: relative;
+            margin: 0.625rem;  // 10px
+            
+            
+            .input-label {
+              position: absolute;
+              top: 0.02rem;
+              left: 0.7rem;
+              color:darkgray;
+              background-color: $white;
+              
+              
+            }
+        
+            input {
+              width: 335px;
+              height: 2.8125rem;  // 45px
+              margin: 0.625rem;  // 10px
+              border: 0.09375rem solid $color-background; // 1.5px
+              border-radius: 22.5px !important;  
+              
+            }
+    }
+      .primary-btn {
+        width: 335px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .signin-link {
+      color: $black;
+      .link {
+        color: $black;
+        font-weight: $font-weight-ExtraBold;
+        text-decoration: none;
+        &:hover {
+          color: $color-theme;
+        } 
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      .icon {
+        width: 3.75rem;  // 60px
+        height: 3.75rem;  // 60px  
+        border-radius: 50%;
+        border: 0.09375rem solid $color-background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.3125rem;  // 5px
+        text-decoration: none;
+
+        &.facebook i { color: #3B5999; }
+        &.twitter i { color: #55ACEE }
+        &.google i { color: #DD4B39; }
+        }
+    }
+  }
+}
