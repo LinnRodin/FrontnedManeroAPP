@@ -1,7 +1,31 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import { useNavigate, NavLink } from 'react-router-dom';
+import { createData } from './services/apiHelpers';
+import { useState } from 'react';
 
 const SignInView = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+
+  const handleSignIn = async (event) => {
+    event.preventDefault();
+    try {
+      const data = {
+        email,
+        password,
+      };
+      const response = await createData('/auth/signin', data);
+      console.log('Sign in successful:', response);
+      navigate('/');  // Should redirect to homepage manero 
+    } catch (error) {
+      console.error('Error signing in:', error);
+      
+    }
+  };
+
+
   return (
 <section className="sign-in">
   <div className="container">
@@ -13,14 +37,14 @@ const SignInView = () => {
           <h3>Welcome Back!</h3>
           <h4>Sign in to continue</h4>
       </div>
-      <form className="form"> 
+      <form className="form" onSubmit={handleSignIn}> 
         <div className="input-group">
           <label className="input-label" for="email">EMAIL</label>
-            <input type="email" />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div className="input-group">
           <label className="input-label" for="password">PASSWORD</label>
-          <input type="password" />
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
         <div className="info">
             <div className="remember-me">
