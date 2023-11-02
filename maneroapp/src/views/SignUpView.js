@@ -27,6 +27,11 @@ const SignUpView = () => {
       };
       const response = await createData('/auth/signup', data);
       console.log('Sign up successful:', response);
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setPassword('');
+      setConfirmPassword('');
       navigate('/accountcreatedcomfirm');  // See if this will be the right path 
     } catch (error) {
       console.error('Error signing up:', error);

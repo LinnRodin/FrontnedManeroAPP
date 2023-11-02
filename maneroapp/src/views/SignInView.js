@@ -18,7 +18,7 @@ const SignInView = () => {
       };
       const response = await createData('/auth/signin', data);
       console.log('Sign in successful:', response);
-      navigate('/');  // Should redirect to homepage manero 
+      navigate('/');  
     } catch (error) {
       console.error('Error signing in:', error);
       
