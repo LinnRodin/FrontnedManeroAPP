@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import HeaderSection from '../sections/HeaderSection';
+import FooterSection from '../sections/FooterSection';
+import ShowCaseSection from '../sections/ShowCaseSection';
+import ShowCaseSection2 from '../sections/ShowCaseSection2';
 
 const BestSellersView = () => {
     const [isSortingMenuOpen, setSortingMenuOpen] = useState(false);
@@ -18,6 +21,7 @@ const BestSellersView = () => {
     return (
         <>
             <HeaderSection />
+            <ShowCaseSection />
             <section className="top-menu">
                 <div className="container">
                     <div className="angle">
@@ -350,6 +354,8 @@ const BestSellersView = () => {
                 </div>
             </div>
         </section>
+        <ShowCaseSection2 />
+        <FooterSection />
         </>
     )
 }
