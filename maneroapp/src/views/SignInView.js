@@ -60,9 +60,9 @@ const SignInView = () => {
       <div className="signin-link"> Don’t have an account? <NavLink to="/signup" className="link">Sign up.</NavLink>
     </div>
     <div className="social-icons">
-      <a href="https://www.facebook.com" target="_blank" className="icon facebook"><i className="fab fa-facebook-f"></i></a>
-      <a href="https://www.twitter.com" target="_blank" className="icon twitter"><i className="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.google.com" target="_blank" className="icon google"><i className="fab fa-google"></i></a>
+      <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="icon facebook"><i className="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com" target="_blank" rel="noreferrer" className="icon twitter"><i className="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.google.com" target="_blank" rel="noreferrer" className="icon google"><i className="fab fa-google"></i></a>
     </div>    
 </div>
 </section>
