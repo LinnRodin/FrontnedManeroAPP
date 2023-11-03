@@ -4,14 +4,31 @@
     justify-content: flex-start;
     align-items: center;
     height: 50vh;
+}
+    
+.showcase .btn-theme {
+        background-color: white;
+        color: black;
+        border-radius: 25px;
+        font-weight: 500;
+        margin-top:  1rem ;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+    
+    .showcase .btn-theme:hover {
+        background-color: blueviolet;
+        color: white;
+    }
 
+    
     .container {
         margin-top: 100px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-    }
-
+    
+   
     .showcase-body {
         text-align: left;
         background-color: lightskyblue;
@@ -32,5 +49,7 @@
             margin: 2rem 0;
             margin-left: 6rem;
         }
+        
+       
     }
 }
