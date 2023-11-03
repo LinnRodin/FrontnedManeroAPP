@@ -39,3 +39,13 @@ export const deleteData = async (endpoint) => {
     throw error;
   }
 };
+
+export const sendResetLink = async (endpoint, data) => {
+  try {
+    const response = await axiosAPI.post(endpoint, data);
+    return response.data;
+  } catch (error) {
+    console.error('Error sending reset link:', error);
+    throw error;
+  }
+};
