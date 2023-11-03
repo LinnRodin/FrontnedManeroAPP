@@ -32,7 +32,7 @@ const SignUpView = () => {
       setEmail('');
       setPassword('');
       setConfirmPassword('');
-      navigate('/accountcreatedcomfirm');  // See if this will be the right path 
+      navigate('/');  // See if this will be the right path 
     } catch (error) {
       console.error('Error signing up:', error);
      
@@ -48,7 +48,7 @@ const SignUpView = () => {
           <i className="fa fa-pipe"></i>
           <h3>Sign Up</h3>
         </div>
-        <form className="form"  onSubmit={handleSignUp}>
+        <form className="form" onSubmit={handleSignUp}>
           <div className="input-group">
             <label className="input-label" htmlFor="firstname">FIRSTNAME</label>
             <input type="text" id="firstname" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
@@ -92,3 +92,7 @@ const SignUpView = () => {
 
 
 export default SignUpView
+
+
+
+
