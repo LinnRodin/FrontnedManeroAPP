@@ -2,8 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.min.css';
 import BestSellersView from './Views/BestSellersView';
 import { CategoriesPage } from './CategoriesPage';
-import FooterSection from './sections/FooterSection';
-import ShowCaseSection from './sections/ShowCaseSection';
+
 
 
 function App() {

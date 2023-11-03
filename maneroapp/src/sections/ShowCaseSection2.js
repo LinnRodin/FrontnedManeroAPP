@@ -7,9 +7,8 @@ const ShowCaseSection = () => {
         <div className="container">
             <div className="showcase-body">
            
-                <h1>Take 50% OFF new!</h1>
-                <h1></h1>
-                <h1></h1>
+                <h1>Take 50% OFF now!</h1>
+                
             </div>
         </div>
     </section>

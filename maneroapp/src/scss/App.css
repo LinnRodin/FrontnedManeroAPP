@@ -746,8 +746,7 @@ h2 {
   margin-left: 6rem;
 }
 
-/*footer */
-footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -755,13 +754,13 @@ footer {
   background-color: white;
   color: #080C24;
 }
-footer .menu-links {
+.footer .menu-links {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 155px;
 }
-footer .menu-link {
+.footer .menu-link {
   margin: 0 10px;
   text-decoration: none;
   color: black;
