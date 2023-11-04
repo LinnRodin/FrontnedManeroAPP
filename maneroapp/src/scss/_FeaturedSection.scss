@@ -1,0 +1,145 @@
+
+
+.bg-theme {
+    background-color: rgb(210, 189, 189);
+ }
+.text-theme {
+    color: #f1dd21e3;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .section-title h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #100101;
+    font-size: 2rem;
+    margin: 0;
+    margin-top:20px;
+    margin-left: 100px;
+}
+  
+  .menu-link {
+    text-align: right;
+  }
+a{
+    color: var(--color-theme);
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+    }
+a:hover {
+    color: lightskyblue;
+    text-decoration: underline;
+    }
+
+.shop-by-category {
+    color: #0e0001;
+}
+
+/* new-arrivals */
+
+.new-arrivals {
+    padding-top: 1rem;
+    padding-left: 40px;}
+   
+
+.new-arrivals .card {
+    position: relative;
+    height: 190px;
+    width: 200px;
+    background-color:#DBE3F5;
+    
+
+}
+
+.new-arrivals .card .card-body {
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+    height: 290px;
+    color: var(--color-white);
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+    font-size: 100;
+}
+
+.new-arrivals .card:hover .card-body {
+    height: 100%;
+
+}
+.new-arrivals .card-body h5 {
+    font-size: 100;
+    margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
+    font-weight: 'Mulish', sans-serif;
+}
+
+.new-arrivals .card:hover .card-body h5 {
+    margin-bottom: 0;
+    
+}
+
+.new-arrivals .card .card-body button {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+    font-size: 0.875rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+
+.new-arrivals .card-body {
+        font-weight: var(--font-weight-medium);
+        font-size: 1rem;
+        margin: 0;
+}
+.new-arrivals .card-background {
+    position: absolute;
+    bottom: 0;
+    height: 190px;
+    width: 200px;
+    background-color: gainsboro;
+    opacity: 0.90;
+    transition: 0.3s ease-in-out;
+}
+.new-arrivals .card:hover .card-background {
+    height: 100%;
+}
+
+
+.new-arrivals .card-menu {
+    position: absolute;
+    z-index: 1;
+    top: 1%;
+    right: 4%;
+    list-style: none;
+    margin: auto;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: var(--border-radius-medium);
+    background-color: var(--color-white);
+    transition: 0.3s ease-in-out;
+}
+.new-arrivals .card:hover .card-menu {
+    top: 20px;
+    
+}
+
+.new-arrivals .card-menu li {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.0rem;
+}
+.new-arrivals .card .card-menu li a {
+    color: var(--color-gray-0);
+}
+.new-arrivals .card .card-menu li a:hover {
+    color: var(--color-theme);
+}
+
+

@@ -3,6 +3,7 @@ import HeaderSection from '../sections/HeaderSection';
 import FooterSection from '../sections/FooterSection';
 import ShowCaseSection from '../sections/ShowCaseSection';
 import ShowCaseSection2 from '../sections/ShowCaseSection2';
+import FeaturedSection from '../sections/FeaturedSection';
 
 const BestSellersView = () => {
     const [isSortingMenuOpen, setSortingMenuOpen] = useState(false);
@@ -355,6 +356,7 @@ const BestSellersView = () => {
             </div>
         </section>
         <ShowCaseSection2 />
+        <FeaturedSection />
         <FooterSection />
         </>
     )
