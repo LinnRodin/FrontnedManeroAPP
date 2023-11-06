@@ -6,12 +6,11 @@ const FeaturedSection = () => {
 
 <section className="shop-by-category">
     
-    <div className="section-title">
-                <h1>FEATURED PRODUCTS</h1>
-                <a className="menu-link" href="/products">wiev all</a>                           
-            </div>
         <div className="container">
-          
+              <div className="section-title">
+                <h1>FEATURED PRODUCTS</h1>
+                <a className="menu-link" href="/products">view all</a>                           
+            </div>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
 
                     <div className="new-arrivals">

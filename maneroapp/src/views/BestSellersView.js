@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import HeaderSection from '../sections/HeaderSection';
-import FooterSection from '../sections/FooterSection';
-import ShowCaseSection from '../sections/ShowCaseSection';
-import ShowCaseSection2 from '../sections/ShowCaseSection2';
-import FeaturedSection from '../sections/FeaturedSection';
 
 const BestSellersView = () => {
     const [isSortingMenuOpen, setSortingMenuOpen] = useState(false);
@@ -22,7 +18,6 @@ const BestSellersView = () => {
     return (
         <>
             <HeaderSection />
-            <ShowCaseSection />
             <section className="top-menu">
                 <div className="container">
                     <div className="angle">
@@ -75,289 +70,286 @@ const BestSellersView = () => {
                 </div>
             </section>
 
-        <section className="bestSellersProduct">
-            <div className="container">
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
+            <section className="bestSellersProduct">
+                <div className="container">
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
                         </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
+                    </div>
+                    <div className="product-card">
+                        <div className="card">
+                            <ul className="card-menu">
+                                <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
+                                <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
+                            </ul>
+                            <div className="card-background"></div>
+                        </div>
+                        <div className="card-body">
+                            <div className="stars">
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-solid fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <i className="fa-regular fa-star"></i>
+                                <span>(3)</span>
+                            </div>
+            
+                            <h5>Purple sneakers</h5>
+                            <p className="price">$35.00</p>
+            
+                        </div>
                     </div>
                 </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-                <div className="product-card">
-                    <div className="card">
-                        <ul className="card-menu">
-                            <li><a href="#"><i className="fa-light fa-heart"></i></a></li>
-                            <li><a href="#"><i className="fa-light fa-bag-shopping"></i></a></li>
-                        </ul>
-                        <div className="card-background"></div>
-                    </div>
-                    <div className="card-body">
-                        <div className="stars">
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-solid fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <i className="fa-regular fa-star"></i>
-                            <span>(3)</span>
-                        </div>
-        
-                        <h5>Purple sneakers</h5>
-                        <p className="price">$35.00</p>
-        
-                    </div>
-                </div>
-            </div>
-        </section>
-        <ShowCaseSection2 />
-        <FeaturedSection />
-        <FooterSection />
+            </section>
         </>
     )
 }

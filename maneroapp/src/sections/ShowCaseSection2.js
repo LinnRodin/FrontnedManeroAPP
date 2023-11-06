@@ -23,5 +23,3 @@ const ShowCaseSection2 = () => {
 }
 
 export default ShowCaseSection2
-
-

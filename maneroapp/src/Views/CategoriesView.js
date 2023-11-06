@@ -72,7 +72,7 @@ const CategoriesView = () => {
                 </form>
 
                 <div className="bar-icon">
-                    <a href="home.html"><i className="fa-solid fa-house"></i></a>
+                    <a href="/"><i className="fa-solid fa-house"></i></a>
                     <a href="wishlist.html"><i className="fa-regular fa-heart"></i></a>
                     <a href="signin.html"><i className="fa-regular fa-user"></i></a>
                 </div>

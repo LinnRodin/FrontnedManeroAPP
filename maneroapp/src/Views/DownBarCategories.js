@@ -4,7 +4,7 @@ const DownBarCategories = () => {
   return (
     <section className="down-bar">
         <div className="container">
-            <div class="bar-icon">
+            <div className="bar-icon">
                 <a href="home.html"><i className="fa-solid fa-house"></i></a>
                 <a href="search.html"><i className="fa-regular fa-magnifying-glass"></i></a>
                 <a href="shopping.html"><i className="fa-light fa-bag-shopping"></i></a>

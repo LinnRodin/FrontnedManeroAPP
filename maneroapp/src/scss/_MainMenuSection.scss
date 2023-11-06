@@ -75,4 +75,8 @@
         box-shadow: 0 0 6px 4px $color-dark-2;
     }
   }
+
+  @include md {
+    display: none;
+}
 }

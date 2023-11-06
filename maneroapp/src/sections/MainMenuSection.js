@@ -22,7 +22,7 @@ const MainMenuSection = () => {
                 </NavLink>
                 </div>    
                
-               <NavLink className="logo" to ="/" end>M</NavLink>
+               <NavLink className="logo" to ="/" end>Manero</NavLink>
            <div className="menu-icons">
            <div className="menu-links">
                     <a id="cart" className="menu-link" href="#">

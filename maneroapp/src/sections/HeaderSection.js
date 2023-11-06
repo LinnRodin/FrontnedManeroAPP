@@ -2,21 +2,21 @@ import React from 'react'
 
 const HeaderSection = () => {
     return (
-        <header className="header">
+    <header className="header">
         <div className="container">
             <div className="logo">
                 <div className="circle-outer">
                     <div className="circle-inner">
-                        <a href="home.html"><h1>Manero</h1></a>
+                        <a href="/"><h1>Manero</h1></a>
                     </div>
                 </div>
             </div>
             <div className="menu-links">
                 <span className="links">
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                     <a href="categories">Categories</a>
-                    <a href="#">Products</a>
-                    <a href="contact.html">Contacts</a>
+                    <a href="bestsellers">Products</a>
+                    <a href="contact">Contacts</a>
                 </span>
             </div>
             <div className="header-icon">

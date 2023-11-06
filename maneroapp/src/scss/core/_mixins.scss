@@ -3,7 +3,9 @@
     @media (min-width: 576px ){
         @content
     }
-}@mixin md {
+}
+
+@mixin md {
     @media (min-width:768px){
         @content
     }
