@@ -21,7 +21,7 @@ const BestSellersView = () => {
             <section className="top-menu">
                 <div className="container">
                     <div className="angle">
-                        <a href=""><i className="fa-solid fa-angle-left"></i></a>
+                        <a href="/"><i className="fa-solid fa-angle-left"></i></a>
                     </div>
                     <div className="section-title"><h1>Best sellers</h1></div>
                     <div className="bag-icon">

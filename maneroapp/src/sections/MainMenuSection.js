@@ -17,7 +17,7 @@ const MainMenuSection = () => {
                 <NavLink className="dropdown-menu">
                 <NavLink className="dropdown-item" to="/" end>Home</NavLink> 
                 <NavLink className="dropdown-item" to="/categories" end>Categories</NavLink>   
-                <NavLink className="dropdown-item" to="/products" end>Products</NavLink>   
+                <NavLink className="dropdown-item" to="/bestsellers" end>Products</NavLink>   
                 <NavLink className="dropdown-item" to="/contacts" end>Contacts</NavLink>   
                 </NavLink>
                 </div>    
