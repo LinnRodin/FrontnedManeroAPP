@@ -1,6 +1,18 @@
-import React from 'react'
-
+import React, { useState, useEffect } from 'react';
+ 
 const GridCategories = () => {
+  const [categories, setCategories] = useState([]);
+ 
+  useEffect(() => {
+    // Fetch categories from your API
+    fetch('https://localhost:7277/api/products/categories')
+      .then(response => response.json())
+      .then(data => {
+        setCategories(data.content); // Set the retrieved categories in state
+      })
+      .catch(error => console.error('Error:', error));
+  }, []); // Empty dependency array means this effect runs only once
+ 
   return (
     <section className="categories">
         <div className="container">
@@ -11,29 +23,22 @@ const GridCategories = () => {
                 <a href="man.html">ACCESSORIES</a>
             </div>
             <div className="grid-categories">
-                <div className="items">
-                <a href="" className="item">Dresses</a>
-                </div>
-                <div className="items">
-                <a href="" className="item">Pants</a>
-                </div>
-                <div className="items">
-                <a href="" className="item">Accessories</a>
-                </div>
-                <div className="items">
-                <a href="" className="item">Shoes</a>
-                </div>
-                <div className="items">
-                <a href="" className="item">T-shirts</a>
-                </div>
-                <div className="items">
-                <a href="" className="item">Jakets</a>
-                </div>
-            </div>
+                {Array.isArray(categories) ? (
+                    categories.map(category => (
+                        <div key={category.name} className="items">
+                            <a href="" className="item">
+                                {category.name}
+                            </a>
+                        </div>
+                    ))
+                ) : (
+                    <p>Loading categories...</p>
+                )}
+          </div>
         </div>
         <hr></hr>
-  </section> 
+  </section>
   )
 }
-
+ 
 export default GridCategories
