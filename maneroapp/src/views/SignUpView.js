@@ -4,26 +4,26 @@ import { createData } from '../services/apiHelpers';
 
 const SignUpView = () => {
 
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [FirstName, setFirstName] = useState('');
+  const [LastName, setLastName] = useState('');
+  const [Email, setEmail] = useState('');
+  const [Password, setPassword] = useState('');
+  const [ConfirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
 
   const handleSignUp = async (event) => {
     event.preventDefault();
-    if (password !== confirmPassword) {
+    if (Password !== ConfirmPassword) {
       console.error('Passwords do not match');
       // Handle error (e.g., show error message to user)
       return;
     }
     try {
       const data = {
-        firstName,
-        lastName,
-        email,
-        password,
+        FirstName,
+        LastName,
+        Email,
+        Password,
       };
       const response = await createData('api/users/register', data);
       console.log('Sign up successful:', response);
@@ -51,23 +51,23 @@ const SignUpView = () => {
         <form className="form" onSubmit={handleSignUp}>
           <div className="input-group">
             <label className="input-label" htmlFor="firstname">FIRSTNAME</label>
-            <input type="text" id="firstname" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
+            <input type="text" id="firstname" value={FirstName} onChange={(e) => setFirstName(e.target.value)}/>
           </div>
           <div className="input-group">
             <label className="input-label" htmlFor="lastname">LASTNAME</label>
-            <input type="text" id="lastname" value={lastName} onChange={(e) => setLastName(e.target.value)}/>
+            <input type="text" id="lastname" value={LastName} onChange={(e) => setLastName(e.target.value)}/>
           </div>
           <div className="input-group">
             <label className="input-label" htmlFor="email">EMAIL</label>
-            <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" id="email" value={Email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div className="input-group">
             <label className="input-label" htmlFor="password">PASSWORD</label>
-            <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+            <input type="password" id="password" value={Password} onChange={(e) => setPassword(e.target.value)}/>
           </div>
           <div className="input-group">
             <label className="input-label" htmlFor="confirmPassword">COMFIRM PASSWORD</label>
-            <input type="password" id="confirmPassword" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+            <input type="password" id="confirmPassword" value={ConfirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
           </div>
           <button type="submit" className="primary-btn">SIGN UP</button>
         </form>
