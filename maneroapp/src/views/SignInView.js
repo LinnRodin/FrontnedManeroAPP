@@ -5,18 +5,18 @@ import { useState } from 'react';
 
 const SignInView = () => {
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [Email, setEmail] = useState('');
+  const [Password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleSignIn = async (event) => {
     event.preventDefault();
     try {
       const data = {
-        email,
-        password,
+        Email,
+        Password,
       };
-      const response = await createData('/auth/signin', data);
+      const response = await createData('/api/users/login', data);
       console.log('Sign in successful:', response);
       navigate('/');  
     } catch (error) {
@@ -40,11 +40,11 @@ const SignInView = () => {
       <form className="form" onSubmit={handleSignIn}> 
         <div className="input-group">
           <label className="input-label" for="email">EMAIL</label>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" value={Email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div className="input-group">
           <label className="input-label" for="password">PASSWORD</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input type="password" value={Password} onChange={(e) => setPassword(e.target.value)} />
         </div>
         <div className="info">
             <div className="remember-me">
