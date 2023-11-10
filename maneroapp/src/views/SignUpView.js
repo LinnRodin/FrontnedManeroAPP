@@ -15,7 +15,7 @@ const SignUpView = () => {
     event.preventDefault();
     if (Password !== ConfirmPassword) {
       console.error('Passwords do not match');
-      // Handle error (e.g., show error message to user)
+      // Handle error 
       return;
     }
     try {
@@ -25,7 +25,7 @@ const SignUpView = () => {
         Email,
         Password,
       };
-      const response = await createData('api/users/register', data);
+      const response = await createData('/api/users/register', data);
       console.log('Sign up successful:', response);
       setFirstName('');
       setLastName('');

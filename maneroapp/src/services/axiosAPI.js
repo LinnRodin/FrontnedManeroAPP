@@ -3,7 +3,7 @@ import axios from 'axios';
 // Skapar en instans av axios med förkonfigurerade inställningar
 const axiosAPI = axios.create({
   // Bas-URL:en för backend manero
-  baseURL: 'https://localhost:7277/',
+  baseURL: 'https://localhost:7277/api',
   // Definierar timeouts
   timeout: 3000,
   // Definierar headers
@@ -12,3 +12,5 @@ const axiosAPI = axios.create({
 
 
 export default axiosAPI;
+
+
