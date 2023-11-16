@@ -5,7 +5,7 @@ const axiosAPI = axios.create({
   // Bas-URL:en för backend manero
   baseURL: 'https://localhost:7277',
   // Definierar timeouts
-  timeout: 3000,
+  timeout: 10000,
   // Definierar headers
   headers: {'Content-Type': 'application/json'}
 });
