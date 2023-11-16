@@ -15,7 +15,7 @@ const SignUpView = () => {
     event.preventDefault();
     if (password !== confirmPassword) {
       console.error('Passwords do not match');
-      // Handle error 
+   
       return;
     }
     try {
