@@ -5,16 +5,16 @@ import { useState } from 'react';
 
 const SignInView = () => {
 
-  const [Email, setEmail] = useState('');
-  const [Password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleSignIn = async (event) => {
     event.preventDefault();
     try {
       const data = {
-        Email,
-        Password,
+        email,
+        password,
       };
       const response = await createData('/api/users/login', data);
       console.log('Sign in successful:', response);
@@ -40,11 +40,11 @@ const SignInView = () => {
       <form className="form" onSubmit={handleSignIn}> 
         <div className="input-group">
           <label className="input-label" for="email">EMAIL</label>
-            <input type="email" value={Email} onChange={(e) => setEmail(e.target.value)} />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
         </div>
         <div className="input-group">
           <label className="input-label" for="password">PASSWORD</label>
-          <input type="password" value={Password} onChange={(e) => setPassword(e.target.value)} />
+          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
         <div className="info">
             <div className="remember-me">
@@ -55,7 +55,7 @@ const SignInView = () => {
                 <NavLink to="/forgotpassword" className="link"> Forgot Password?</NavLink>
             </div>    
         </div>
-        <NavLink to="/" className="primary-btn">SIGN IN</NavLink>
+        <button type="submit" className="primary-btn">SIGN IN</button>
       </form>
       <div className="signin-link"> Don’t have an account? <NavLink to="/signup" className="link">Sign up.</NavLink>
     </div>
