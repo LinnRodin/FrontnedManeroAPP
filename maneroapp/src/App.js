@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<StartUpScreenView />} />
         <Route path="/signup" element={<SignUpView />} />
-        <Route path="/accountcreatedcomfirm" element={<AccountCreatedConfirmView />} />
+        <Route path="/accountcreatedconfirm" element={<AccountCreatedConfirmView />} />
         <Route path="/signin" element={<SignInView />} />
         <Route path="/forgotpassword" element={<ForgotPasswordView />} />
         <Route path="/passwordreset" element={<PasswordResetView/>} />
